@@ -199,7 +199,6 @@
       - id: HandheldCrewMonitorMicroreactor
       - id: HandHeldMassScannerMarrik
       - id: BoxDisposableKitClover
-      - id: RubberStampCentcom
       - id: StorageImplanterDisposable
       - id: TrackingImplanterDisposable
       - id: MedicalTrackingImplanterDisposable
