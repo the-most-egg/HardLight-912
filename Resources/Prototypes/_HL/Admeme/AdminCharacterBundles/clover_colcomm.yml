@@ -14,7 +14,7 @@
     outerClothing: ClothingOuterArmorChameleon
     jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
     belt: ClothingBeltSheathFilled
-    back: ClothingBackpackDuffelHoldingCloverFilled
+    back: ClothingBackpackMessengerHoldingCloverFilled
     id: CloverColcommPDA
 
 - type: startingGear
@@ -33,7 +33,7 @@
     outerClothing: ClothingOuterVestWebEliteCentcomm
     jumpsuit: ClothingUniformJumpskirtCentcomDirector
     belt: ClothingBeltSheathFilled
-    back: ClothingBackpackDuffelHoldingCloverFilled
+    back: ClothingBackpackMessengerHoldingCloverFilled
     id: CloverColcommDirectorPDA
 
 - type: startingGear
@@ -52,7 +52,7 @@
     outerClothing: ClothingOuterVestWebEliteCentcomm
     jumpsuit: ClothingUniformJumpskirtPencilCentcomOfficial
     belt: ClothingBeltSheathFilled
-    back: ClothingBackpackDuffelHoldingCloverFilled
+    back: ClothingBackpackMessengerHoldingCloverFilled
     id: CloverColcommPDA
 
 # ID Card - Normal Clover
@@ -173,7 +173,7 @@
 
 # backpack
 - type: entity
-  id: ClothingBackpackDuffelHoldingCloverFilled
+  id: ClothingBackpackMessengerHoldingCloverFilled
   parent: ClothingBackpackMessengerHolding
   suffix: Clover, Filled
   components:
