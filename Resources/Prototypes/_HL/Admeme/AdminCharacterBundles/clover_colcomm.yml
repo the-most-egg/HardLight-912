@@ -1,8 +1,8 @@
 - type: startingGear
-  id: CCSuperintendentCloverBundle
+  id: CCCloverBundle
   equipment:
-    pocket1: BoxFolderColComClipboardNirou
-    pocket2: PocketBluespaceTankGilm
+    pocket1: PocketBluespaceTankGilm
+    pocket2: EnergyShieldNfsd
     head: ClothingHeadHatCentcomcap
     neck: ClothingNeckScarfStripedCentcom
     mask: ClothingMaskGasCentcom
@@ -18,10 +18,29 @@
     id: CloverColcommPDA
 
 - type: startingGear
-  id: CCSuperintendentCloverWarBundle
+  id: CCCloverDirectorBundle
   equipment:
-    pocket1: AmmoBox145x114mmBig
-    pocket2: PocketBluespaceTankGilm
+    pocket1: PocketBluespaceTankGilm
+    pocket2: EnergyShieldNfsd
+    head: ClothingHeadHelmetChameleon
+    neck: ClothingNeckScarfStripedBlack
+    mask: ClothingMaskGasCentcom
+    eyes: ClothingEyesGlassesNfsd
+    ears: ClothingHeadsetAltColCom
+    gloves: ClothingHandsGlovesForensicNF
+    shoes: ClothingShoesChameleonNoSlips
+    suitstorage: WeaponDisablerSMGRecharging
+    outerClothing: ClothingOuterVestWebEliteCentcomm
+    jumpsuit: ClothingUniformJumpskirtCentcomDirector
+    belt: ClothingBeltSheathFilled
+    back: ClothingBackpackSatchelHoldingNirouFilled
+    id: CloverColcommDirectorPDA
+
+- type: startingGear
+  id: CCCloverWarBundle
+  equipment:
+    pocket1: PocketBluespaceTankGilm
+    pocket2: AmmoBox145x114mmBig
     head: ClothingHeadHelmetHardsuitERTCentcomm
     neck: ClothingNeckScarfStripedCentcom
     mask: ClothingMaskGasCentcom
@@ -36,7 +55,7 @@
     back: ClothingBackpackSatchelHoldingNirouFilled
     id: CloverColcommPDA
 
-# ID Card
+# ID Card - Normal Clover
 - type: entity
   id: CloverColcommIDCard
   parent: IDCardStandard
@@ -63,10 +82,68 @@
     tags:
     - CentralCommand
 
-# pda
+       # ID Card - Directorate Clover
+- type: entity
+  id: CloverColcommDirectorIDCard
+  parent: DirectorateIDCard
+  name: Clover Petal Enright's ID card (Colonial Superintendent)
+  description: '"So... so sleepy..."'
+  suffix: Clover, Admin
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: IdCard
+    fullName: Clover Petal Enright
+    jobTitle: job-title-colonial-superintendent
+    jobIcon: JobIconDirectorate
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: idcentcom
+  - type: Item
+    heldPrefix: blue
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
+
+# pda - Normal Clover
 - type: entity
   id: CloverColcommPDA
   parent: CentcomPDA
+  # name:
+  # description:
+  suffix: Clover, Admin
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: Pda
+    id: CloverColcommIDCard # ID Card
+    penSlot:
+      startingItem: PenCentcom
+      whitelist:
+        tags:
+        - Write
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - BountyContractsCartridge
+    - AstroNavCartridge
+    - MedTekCartridge
+    - WantedListCartridge
+    - GlimmerMonitorCartridge
+    - PsiWatchCartridge
+
+# pda Directorate Clover
+- type: entity
+  id: CloverColcommDirectorPDA
+  parent: DirectoratePDA
   # name:
   # description:
   suffix: Clover, Admin
