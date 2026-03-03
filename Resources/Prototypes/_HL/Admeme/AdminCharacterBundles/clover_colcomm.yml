@@ -14,7 +14,7 @@
     outerClothing: ClothingOuterArmorChameleon
     jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
     belt: ClothingBeltSheathFilled
-    back: ClothingBackpackSatchelHoldingNirouFilled
+    back: ClothingBackpackDuffelHoldingCloverFilled
     id: CloverColcommPDA
 
 - type: startingGear
@@ -33,7 +33,7 @@
     outerClothing: ClothingOuterVestWebEliteCentcomm
     jumpsuit: ClothingUniformJumpskirtCentcomDirector
     belt: ClothingBeltSheathFilled
-    back: ClothingBackpackSatchelHoldingNirouFilled
+    back: ClothingBackpackDuffelHoldingCloverFilled
     id: CloverColcommDirectorPDA
 
 - type: startingGear
@@ -52,7 +52,7 @@
     outerClothing: ClothingOuterVestWebEliteCentcomm
     jumpsuit: ClothingUniformJumpskirtPencilCentcomOfficial
     belt: ClothingBeltSheathFilled
-    back: ClothingBackpackSatchelHoldingNirouFilled
+    back: ClothingBackpackDuffelHoldingCloverFilled
     id: CloverColcommPDA
 
 # ID Card - Normal Clover
@@ -170,3 +170,59 @@
     - WantedListCartridge
     - GlimmerMonitorCartridge
     - PsiWatchCartridge
+
+# backpack
+- type: entity
+  id: ClothingBackpackDuffelHoldingCloverFilled
+  parent: ClothingBackpackMessengerHolding
+  suffix: Clover, Filled
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: ExplosionResistance
+    damageCoefficient: 0
+  - type: StorageFill
+    contents:
+      - id: MedkitAdvancedFilled
+      - id: JawsOfLife
+      - id: PowerDrill
+      - id: WelderIndustrialAdvanced
+      - id: BoxDispenserFlare
+      - id: Stunbaton
+      - id: Handcuffs
+        amount: 2
+      - id: Flash
+      - id: BodyBagFolded
+      - id: FoodWaterJugBluespace
+      - id: BoxFolderColComClipboardNirou
+      - id: HandheldCrewMonitorMicroreactor
+      - id: HandHeldMassScannerMarrik
+      - id: BoxDisposableKitClover
+      - id: RubberStampCentcom
+      - id: StorageImplanterDisposable
+      - id: TrackingImplanterDisposable
+      - id: MedicalTrackingImplanterDisposable
+      - id: DeathRattleImplanterColcommDisposable
+      - id: MindShieldImplanterDisposable
+      - id: RadioImplanterColcommDisposable
+      - id: DeathAcidifierImplanterDisposable
+
+#storage implant box
+- type: entity
+  id: BoxDisposableKitClover
+  parent: BoxDisposableKit
+  name: clover's storage implant items
+  suffix: Admin, Clover
+  components:
+  - type: Tag
+    tags:
+    - Admin
+  - type: StorageFill
+    contents:
+      - id: DoorRemoteAll
+      - id: AccessConfiguratorUniversalUniversalIDCard
+      - id: HandTeleporterAdmin
+      - id: AdminHypo
+      - id: RCDExperimental
+      - id: RubberStampCentcom
